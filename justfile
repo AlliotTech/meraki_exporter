@@ -5,7 +5,7 @@ export PATH := justfile_directory() + "/env/bin:" + env_var("PATH")
   just --list
 
 build:
-  docker build . -t meraki_exporter:latest
+  docker build . -t ghcr.io/alliottech/meraki_exporter:latest
 
 up: 
   just build && docker compose up -d 

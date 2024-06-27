@@ -1,6 +1,6 @@
 services:
   meraki-exporter:
-    image: meraki_exporter:latest
+    image: ghcr.io/alliottech/meraki_exporter:latest
     ports:
       - "8080:8080"
     env_file: .env
